@@ -2,74 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alyx's portfolio-projects</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Alyx's portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-<header>
-    <nav>
-        <h2>Alyx's portfolio</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a style="text-decoration: underline;"  href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<div class="overflow-hidden">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="background-color: cadetblue;">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">Alyx's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
 
-        </ul>
-    </nav>
-</header>
-<div class="project-container">
-    <div class="card-outer">
-        <a href="#">
-            <div class="card-inner">
-        <div class="preview-img"><img src="assets/placeholder_project.png" alt="placeholder"></div>
-        <div class="card-text">
-            <h3>an amazing project</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit harum maiores officiis, perferendis provident saepe ullam. Assumenda atque commodi cumque cupiditate dignissimos dolor eius explicabo facere fuga, id laboriosam molestias necessitatibus obcaecati odit officia pariatur, perspiciatis provident quisquam, ratione reiciendis repellat tempore totam ut voluptas voluptatibus? Ad animi consectetur, deleniti dolorem ducimus, facilis fugiat incidunt ipsam ipsum laboriosam laudantium libero modi nemo non optio provident qui quia quibusdam rem repudiandae sed sint tempora vero! Autem commodi, eius in itaque minus molestias nisi nobis quis quo recusandae sed similique ut. Architecto atque, consectetur delectus fuga labore molestiae nobis quam repellat?
         </div>
+    </div>
+</nav>
+<div class="d-flex row" style="margin-bottom: 1rem;">
+    <div class="col-sm">
+
+        <div class="card" >
+            <img src="assets/placeholder_project.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus modi nostrum perspiciatis soluta. Dignissimos distinctio ea et ipsam natus non quae ratione. Amet aspernatur assumenda at commodi corporis cupiditate dicta eius error hic illo ipsam iste itaque magnam modi numquam odit possimus quae quasi recusandae, repellendus sapiente sint sunt tempora totam ut vitae voluptatibus? Ab aperiam at aut delectus dolor dolorum eos expedita laborum minus natus, odio pariatur perspiciatis, recusandae reiciendis repellat reprehenderit sed soluta vel veritatis vero. Accusantium aliquid, aperiam corporis delectus iure rerum sed! Assumenda, consequatur, est ex excepturi fugiat ipsam labore minima nobis quidem voluptatibus voluptatum.</p>
+
+            </div>
         </div>
-        </a>
     </div>
-    <div class="card-outer">
-        <a href="#">
-            <div class="card-inner">
-                <div class="preview-img"><img src="assets/placeholder_project.png" alt="placeholder"></div>
-                <div class="card-text">
-                    <h3>an amazing project</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit harum maiores officiis, perferendis provident saepe ullam. Assumenda atque commodi cumque cupiditate dignissimos dolor eius explicabo facere fuga, id laboriosam molestias necessitatibus obcaecati odit officia pariatur, perspiciatis provident quisquam, ratione reiciendis repellat tempore totam ut voluptas voluptatibus? Ad animi consectetur, deleniti dolorem ducimus, facilis fugiat incidunt ipsam ipsum laboriosam laudantium libero modi nemo non optio provident qui quia quibusdam rem repudiandae sed sint tempora vero! Autem commodi, eius in itaque minus molestias nisi nobis quis quo recusandae sed similique ut. Architecto atque, consectetur delectus fuga labore molestiae nobis quam repellat?
-                </div>
+    <div class="col-sm">
+
+        <div class="card" >
+            <img src="assets/placeholder_project.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus modi nostrum perspiciatis soluta. Dignissimos distinctio ea et ipsam natus non quae ratione. Amet aspernatur assumenda at commodi corporis cupiditate dicta eius error hic illo ipsam iste itaque magnam modi numquam odit possimus quae quasi recusandae, repellendus sapiente sint sunt tempora totam ut vitae voluptatibus? Ab aperiam at aut delectus dolor dolorum eos expedita laborum minus natus, odio pariatur perspiciatis, recusandae reiciendis repellat reprehenderit sed soluta vel veritatis vero. Accusantium aliquid, aperiam corporis delectus iure rerum sed! Assumenda, consequatur, est ex excepturi fugiat ipsam labore minima nobis quidem voluptatibus voluptatum.</p>
+
             </div>
-        </a>
+        </div>
     </div>
-    <div class="card-outer">
-        <a href="#">
-            <div class="card-inner">
-                <div class="preview-img"><img src="assets/placeholder_project.png" alt="placeholder"></div>
-                <div class="card-text">
-                    <h3>an amazing project</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit harum maiores officiis, perferendis provident saepe ullam. Assumenda atque commodi cumque cupiditate dignissimos dolor eius explicabo facere fuga, id laboriosam molestias necessitatibus obcaecati odit officia pariatur, perspiciatis provident quisquam, ratione reiciendis repellat tempore totam ut voluptas voluptatibus? Ad animi consectetur, deleniti dolorem ducimus, facilis fugiat incidunt ipsam ipsum laboriosam laudantium libero modi nemo non optio provident qui quia quibusdam rem repudiandae sed sint tempora vero! Autem commodi, eius in itaque minus molestias nisi nobis quis quo recusandae sed similique ut. Architecto atque, consectetur delectus fuga labore molestiae nobis quam repellat?
-                </div>
+    <div class="col-sm">
+
+        <div class="card" >
+            <img src="assets/placeholder_project.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus modi nostrum perspiciatis soluta. Dignissimos distinctio ea et ipsam natus non quae ratione. Amet aspernatur assumenda at commodi corporis cupiditate dicta eius error hic illo ipsam iste itaque magnam modi numquam odit possimus quae quasi recusandae, repellendus sapiente sint sunt tempora totam ut vitae voluptatibus? Ab aperiam at aut delectus dolor dolorum eos expedita laborum minus natus, odio pariatur perspiciatis, recusandae reiciendis repellat reprehenderit sed soluta vel veritatis vero. Accusantium aliquid, aperiam corporis delectus iure rerum sed! Assumenda, consequatur, est ex excepturi fugiat ipsam labore minima nobis quidem voluptatibus voluptatum.</p>
+
             </div>
-        </a>
-    </div>
-    <div class="card-outer">
-        <a href="#">
-            <div class="card-inner">
-                <div class="preview-img"><img src="assets/placeholder_project.png" alt="placeholder"></div>
-                <div class="card-text">
-                    <h3>an amazing project</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit harum maiores officiis, perferendis provident saepe ullam. Assumenda atque commodi cumque cupiditate dignissimos dolor eius explicabo facere fuga, id laboriosam molestias necessitatibus obcaecati odit officia pariatur, perspiciatis provident quisquam, ratione reiciendis repellat tempore totam ut voluptas voluptatibus? Ad animi consectetur, deleniti dolorem ducimus, facilis fugiat incidunt ipsam ipsum laboriosam laudantium libero modi nemo non optio provident qui quia quibusdam rem repudiandae sed sint tempora vero! Autem commodi, eius in itaque minus molestias nisi nobis quis quo recusandae sed similique ut. Architecto atque, consectetur delectus fuga labore molestiae nobis quam repellat?
-                </div>
-            </div>
-        </a>
+        </div>
     </div>
 </div>
+    <div class="overflow-auto row">
+        <div class="col-sm">
+
+            <div class="card" >
+                <img src="assets/placeholder_project.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus modi nostrum perspiciatis soluta. Dignissimos distinctio ea et ipsam natus non quae ratione. Amet aspernatur assumenda at commodi corporis cupiditate dicta eius error hic illo ipsam iste itaque magnam modi numquam odit possimus quae quasi recusandae, repellendus sapiente sint sunt tempora totam ut vitae voluptatibus? Ab aperiam at aut delectus dolor dolorum eos expedita laborum minus natus, odio pariatur perspiciatis, recusandae reiciendis repellat reprehenderit sed soluta vel veritatis vero. Accusantium aliquid, aperiam corporis delectus iure rerum sed! Assumenda, consequatur, est ex excepturi fugiat ipsam labore minima nobis quidem voluptatibus voluptatum.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+
+            <div class="card" >
+                <img src="assets/placeholder_project.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus modi nostrum perspiciatis soluta. Dignissimos distinctio ea et ipsam natus non quae ratione. Amet aspernatur assumenda at commodi corporis cupiditate dicta eius error hic illo ipsam iste itaque magnam modi numquam odit possimus quae quasi recusandae, repellendus sapiente sint sunt tempora totam ut vitae voluptatibus? Ab aperiam at aut delectus dolor dolorum eos expedita laborum minus natus, odio pariatur perspiciatis, recusandae reiciendis repellat reprehenderit sed soluta vel veritatis vero. Accusantium aliquid, aperiam corporis delectus iure rerum sed! Assumenda, consequatur, est ex excepturi fugiat ipsam labore minima nobis quidem voluptatibus voluptatum.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+
+            <div class="card" >
+                <img src="assets/placeholder_project.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus modi nostrum perspiciatis soluta. Dignissimos distinctio ea et ipsam natus non quae ratione. Amet aspernatur assumenda at commodi corporis cupiditate dicta eius error hic illo ipsam iste itaque magnam modi numquam odit possimus quae quasi recusandae, repellendus sapiente sint sunt tempora totam ut vitae voluptatibus? Ab aperiam at aut delectus dolor dolorum eos expedita laborum minus natus, odio pariatur perspiciatis, recusandae reiciendis repellat reprehenderit sed soluta vel veritatis vero. Accusantium aliquid, aperiam corporis delectus iure rerum sed! Assumenda, consequatur, est ex excepturi fugiat ipsam labore minima nobis quidem voluptatibus voluptatum.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<footer>
-    &copy; Alyx Bruno-Bamford 2022
 
-</footer>
 
+<nav class="navbar sticky-bottom text-white " style="background-color: cadetblue;">
+    <div class="container-fluid justify-content-end">
+
+        &copy Alyx Bruno-Bamford 2022
+
+    </div>
+</nav>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
+

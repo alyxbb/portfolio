@@ -2,25 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alyx's portfolio-about</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Alyx's portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-<header>
-    <nav>
-        <h2>Alyx's portfolio</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a style="text-decoration: underline;"  href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<div>
+<nav class="navbar  sticky-top navbar-expand-lg navbar-dark " style="background-color: cadetblue;">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">Alyx's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
 
-        </ul>
-    </nav>
-</header>
-<div class="about">
-    <div>
-        <h1 class="title">about me</h1>
+        </div>
+    </div>
+</nav>
+
+<div class="d-flex" >
+    <div class="w-50">
+        <h1 class="text-center ">about me</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim molestie lectus, nec aliquet augue accumsan at. Integer sit amet augue diam. Maecenas tempus metus ac hendrerit dapibus. Praesent tempus leo eget mauris feugiat vestibulum. Proin viverra lacinia interdum. Sed cursus vulputate nisl at ultrices. Sed vulputate ex eros, et imperdiet eros interdum a.
 
         Maecenas condimentum sodales iaculis. Donec ligula diam, congue vel eros a, suscipit gravida ex. Nam ac lacus lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed in tincidunt nisi, vitae dignissim est. Donec eu dui sed dui faucibus ultricies id at dui. Proin vitae metus viverra, faucibus quam ac, luctus tellus. Cras efficitur, est ut tempor facilisis, diam leo aliquet massa, quis feugiat eros felis placerat odio. Aenean vulputate, felis quis ultrices vestibulum, lacus diam auctor diam, sed blandit ipsum sem nec felis. Suspendisse lobortis euismod lectus, nec hendrerit metus sollicitudin et. Duis vitae lectus urna. Integer auctor diam quis augue semper, non pulvinar lorem eleifend. Nulla ultrices vulputate viverra. Suspendisse tempus nibh ac pretium pretium.
@@ -30,17 +46,26 @@
         Cras enim risus, dignissim ac turpis ac, molestie maximus orci. Maecenas rhoncus urna ac lacus tempus porttitor. Cras vulputate sem sem. Etiam nec finibus nulla. Donec a tellus sed dui porttitor rutrum tempor dictum leo. Nunc consectetur felis vitae sapien suscipit, ac fringilla dui iaculis. Sed lacus est, dictum condimentum felis vitae, sagittis dignissim odio. Etiam sed elit dapibus, bibendum tortor in, tincidunt urna.
 
         Quisque in nunc interdum, dignissim massa egestas, porta dui. Mauris aliquam dolor a libero elementum tempor. Sed dictum, augue vel ullamcorper sollicitudin, sem tortor euismod ex, eu molestie nibh nibh in diam. Vestibulum nec nisl condimentum, tincidunt purus ut, congue dui. Maecenas in dignissim lectus. Phasellus lobortis sem ut ex fermentum, sit amet malesuada risus ornare. Ut id magna at ligula auctor interdum. Maecenas urna lacus, dapibus a posuere et, molestie et nisl. Quisque accumsan quam placerat fringilla consequat. Nam ac nisl tempor, vulputate ligula sed, interdum sem. Nunc tortor quam, efficitur non elit sit amet, maximus dignissim nunc. Sed ultrices, leo id lacinia egestas, enim lacus dictum lacus, quis hendrerit tortor tortor non metus. Sed pellentesque arcu magna, et tempor turpis congue non. Morbi id consequat mi. Phasellus ut cursus diam. </div>
-    <div><img class="about-img" src="assets/train.jpeg" alt="train"></div>
+    <div class=" w-50"><img class="w-100" src="assets/train.jpeg" alt="train"></div>
 </div>
 
 
 
 
+<nav class="navbar sticky-bottom text-white " style="background-color: cadetblue;">
+    <div class="container-fluid justify-content-end">
 
-<footer>
-     &copy; Alyx Bruno-Bamford 2022
+        &copy Alyx Bruno-Bamford 2022
 
-</footer>
 
+    </div>
+</nav>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
