@@ -9,23 +9,23 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: cadetblue;">
     <div class="container-fluid ">
-        <a class="navbar-brand" href="index.html">Alyx's Portfolio</a>
+        <a class="navbar-brand" href="/">Alyx's Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="/projects">Projects</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link active" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="/contact">Contact</a>
                 </li>
             </ul>
 
@@ -35,9 +35,35 @@
 
 
 <div class="d-flex">
-    <div class="w-75 text-center">
+    <div class="w-50 text-center" >
         <h1 >contact</h1>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam asperiores cumque dolore exercitationem id laborum perspiciatis quae, quam quia recusandae, tenetur voluptas! Ad commodi consectetur delectus ex expedita explicabo fuga id illum incidunt laborum laudantium magnam minus mollitia necessitatibus neque nisi optio placeat praesentium, quod, saepe sit soluta sunt tenetur ullam veniam. Aliquid assumenda beatae commodi deleniti deserunt, doloribus ea explicabo fugiat iure, mollitia nemo nisi perferendis perspiciatis, porro quae quo voluptatibus? Ad aperiam at deleniti dolorum hic itaque laboriosam natus nihil non odio officia quo rerum sed, similique voluptate? Ducimus pariatur quia voluptas! Accusantium doloremque nihil vitae voluptate.
+    </div>
+    <div class="w-25" style="padding:1rem;">
+        <h4>send me a message</h4>
+        <form action="/sendmessage">
+            <div class="form-group">
+                <label for="name">name</label>
+                <input class="form-control" type="text" name="name" placeholder="name" id="name" required><br>
+            </div>
+            <div class="form-group">
+                <label for="email">email</label>
+                <input class="form-control"  type="email" name="email" placeholder="email" id="email" required><br>
+            </div>
+            <div class="form-group">
+                <label for="subject">subject</label>
+                <input  class="form-control" type="text" name="title" placeholder="subject" id="subject" required><br>
+            </div>
+            <div class="form-group">
+                <label for="message">message</label>
+                <textarea class="form-control" name="message" id="message" cols="30" rows="10" required></textarea><br>
+            </div>
+
+
+            <input type="submit" value="send" class="btn btn-primary">
+        </form>
+
+
     </div>
     <div>
         <ul class="list-unstyled">
@@ -46,7 +72,6 @@
             <li style="margin-top:2rem"><img style="height:4rem;"  src="assets/placeholder_project.png" alt="train"> <a href="#">Github</a></li>
             <li style="margin-top:2rem"><img style="height:4rem;"  src="assets/placeholder_project.png" alt="train"> <a href="#">email</a></li>
         </ul>
-
     </div>
 </div>
 
