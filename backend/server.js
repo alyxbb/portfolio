@@ -1,14 +1,20 @@
 const http = require('http');
 const url = require("url");
+const fs = require('fs');
 const nodemailer = require('nodemailer');
+
+ rawdata=fs.readFileSync("./backend/keys.json",)
+keys=JSON.parse(rawdata);
+
+
 
 const hostname = '127.0.0.1';
 const port = 3000;
 var transporter= nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'EMAIL',
-        pass: 'EMAILPASSWORD'
+        user: keys.emailsender,
+        pass: keys.emailpassword
     }
 })
 
@@ -19,8 +25,8 @@ function sendmail(data,callback){
         callback( 400,false,"Error! missing parameters","failed to send message. missing parameters. did you fail to fill in the form fully?");
     }else{
         let options = {
-            from: 'AUTOEMAIL',
-            to: 'EMAIL',
+            from: keys.emailsender,
+            to: keys.emailreciever,
             subject: data.title,
             text: "message from: " + data.name + "\nmessage: " + data.message,
             replyTo: data.email
@@ -28,7 +34,7 @@ function sendmail(data,callback){
         transporter.sendMail(options, function(error, info){
         if (error) {
             console.log(error);
-            return callback(500,false,"Server Error!","failed to send message. this is probably my fault. contact me on EMAIL if this persists.");
+            return callback(500,false,"Server Error!","failed to send message. this is probably my fault. contact me on "+data.emailreciever+" if this persists.");
         } else {
             console.log('Email sent: ' + info.response);
             return callback(200,true,"Success!","message sent! you will recieve a reply within a few days");
